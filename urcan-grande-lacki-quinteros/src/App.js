@@ -1,9 +1,9 @@
 import React from "react";
-import Title from "./components/Title";
+import Title from "./Components/Title";
 import Footer from "./Components/Footer";
-import Menu from "./components/Menu";
+import Menu from "./Components/Menu";
 import Contenido from "./Components/Contenido";
-import Sidebar from "./components/Sidebar";
+import Sidebar from "./Components/Sidebar";
 function App() {
   return (
     <div className="container">
