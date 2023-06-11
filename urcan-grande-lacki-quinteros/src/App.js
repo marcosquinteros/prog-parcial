@@ -46,7 +46,7 @@ function App() {
           <Route path="/*" element={<Error404 />} />
         </Routes>
 
-        <div className="g-0">
+        <div className="">
           <Footer path="/Nosotros" />
         </div>
       </Router>
