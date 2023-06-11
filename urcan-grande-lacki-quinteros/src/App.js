@@ -23,16 +23,16 @@ function App() {
             <h1>Unnamed</h1>
           </div>
           <div className="nav-buttons d-flex gap-4 align-items-center">
-            <Link to="/" className="btn border-black">
+            <Link to="/" className="nav-button">
               Inicio
             </Link>
-            <Link to="/Login" className="btn border-black">
+            <Link to="/Login" className="nav-button">
               Login
             </Link>
-            <Link to="/Register" className="btn border-black">
+            <Link to="/Register" className="nav-button">
               Register
             </Link>
-            <Link to="/Nosotros" className="btn border-black">
+            <Link to="/Nosotros" className="nav-button">
               Nosotros
             </Link>
           </div>
