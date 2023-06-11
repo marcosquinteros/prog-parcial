@@ -6,7 +6,6 @@
 
 body {
   width: 100vw;
-
  height: auto;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -44,6 +43,13 @@ body {
   grid-column: 2 / 3;
   display: grid;
   grid-template-columns: 2fr auto;
+}
+
+.nav-button{
+   color: #252525;
+   border: 2px solid red;
+   padding: 10px 30px;
+   text-decoration: none;
 }
 
 .content {
