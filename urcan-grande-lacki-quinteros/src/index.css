@@ -6,7 +6,7 @@
 
 body {
   width: 100vw;
- height: auto;
+  height: auto;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -81,19 +81,7 @@ body {
 
 .footer {
   grid-column: 1 / 3;
-  background-color: #f0f0f0;
-  padding: 20px;
+
 }
 
-.footer-container{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
-}
 
-.footer-r{
-  display:flex;
-  flex-direction: row;
-  gap: 3rem;
-}

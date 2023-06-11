@@ -11,7 +11,7 @@ function App() {
     <>
       <Router>
         <nav className="d-flex justify-content-between p-4">
-          <div className="logo px-3 d-flex align-items-center">
+          <div className="logo px-3 gap-3 d-flex align-items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="48"
@@ -22,7 +22,7 @@ function App() {
             </svg>
             <h1>Unnamed</h1>
           </div>
-          <div className="nav-buttons d-flex gap-4 align-items-center">
+          <div className="nav-buttons d-flex gap-1 align-items-center">
             <Link to="/" className="nav-button">
               Inicio
             </Link>
@@ -33,7 +33,7 @@ function App() {
               Register
             </Link>
             <Link to="/Nosotros" className="nav-button">
-               Nosotros
+              Nosotros
             </Link>
           </div>
         </nav>
@@ -46,8 +46,8 @@ function App() {
           <Route path="/*" element={<Error404 />} />
         </Routes>
 
-        <div>
-          <Footer />
+        <div className="g-0">
+          <Footer path="/Nosotros" />
         </div>
       </Router>
     </>
