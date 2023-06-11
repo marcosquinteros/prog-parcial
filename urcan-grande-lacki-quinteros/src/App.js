@@ -33,7 +33,7 @@ function App() {
               Register
             </Link>
             <Link to="/Nosotros" className="nav-button">
-              Nosotros
+               Nosotros
             </Link>
           </div>
         </nav>
