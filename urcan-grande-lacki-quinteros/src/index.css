@@ -77,7 +77,24 @@ body {
 
 .sidebar {
   background-color: #252525;
-  padding: 80px;
+  padding-left: 40px;
+  height: 100%;
+  transition: 0.3s ease;
+}
+
+.sidebarOpen{
+  background-color: #252525;
+  padding-left: 200px;
+  height: 100%;
+  transition: 0.3s ease;
+}
+
+.side-button{
+  padding: 3px;
+  color: white;
+  background-color: #252525;
+  border: #252525;
+  position: fixed;
 }
 
 .footer {
