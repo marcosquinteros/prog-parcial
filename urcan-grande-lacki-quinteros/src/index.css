@@ -62,9 +62,10 @@ body {
   background-color: #ffffff;
   padding: 20px;
   min-height: 70vh;
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
+  gap: 2px;
 }
 
 .ad{
@@ -83,5 +84,3 @@ body {
   grid-column: 1 / 3;
 
 }
-
-
