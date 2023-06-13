@@ -1,7 +1,8 @@
 import React from "react";
-import { useState, Link} from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
-const Register = () => {
+const Register = (props) => {
   const [nombre, setNombre] = useState("");
   const [apellido, setApellido] = useState("");
   const [email, setEmail] = useState("");
@@ -118,7 +119,7 @@ const Register = () => {
                 <input
                   type="checkbox">
                 </input>
-                {/* <span> Acepto los <Link to={props.pathError}>terminos y condiciones</Link></span> */}
+                <span> Acepto los <Link to={props.pathError}>terminos y condiciones</Link></span>
               </label>
             </div>
               <button onClick={guardarCLick}>Guardar</button>
