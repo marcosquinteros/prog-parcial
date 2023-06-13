@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, Link} from "react";
 
 const Register = () => {
   const [nombre, setNombre] = useState("");
@@ -47,31 +47,38 @@ const Register = () => {
   return (
     <div>
       <div>
-        <h1>FORMULARIO</h1>
+        <h1>REGISTER</h1>
         <div className="w-100">
           <div className="content-sidebar-wrapper">
             <main className="content">
-              <label>Nombre: </label>
-              <input
-                type="text"
-                id="nombre"
-                name="nombre"
-                placeholder="Nombre"
-                autoComplete="off"
-                value={nombre}
-                onChange={cargarNombre}
-              ></input>
-              <label>Apellido: </label>
-              <input
-                type="text"
-                id="apellido"
-                name="apellido"
-                placeholder="Apellido"
-                autoComplete="off"
-                value={apellido}
-                onChange={cargarApellido}
-              ></input>
-              <label>E-mail: </label>
+              <div className="content-nombre">
+                <div className="input">
+                <label>Nombre: </label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Nombre"
+                  autoComplete="off"
+                  value={nombre}
+                  onChange={cargarNombre}
+                ></input>
+                </div>
+                <div className="input">
+                <label>Apellido: </label>
+                <input
+                  type="text"
+                  id="apellido"
+                  name="apellido"
+                  placeholder="Apellido"
+                  autoComplete="off"
+                  value={apellido}
+                 onChange={cargarApellido}
+                ></input>
+              </div>  
+            </div>
+              <div className="input">
+                <label>E-mail: </label>
               <input
                 type="text"
                 id="email"
@@ -81,6 +88,8 @@ const Register = () => {
                 value={email}
                 onChange={cargarEmail}
               ></input>
+              </div>
+            <div className="input">
               <label>Contraseña: </label>
               <input
                 type="password"
@@ -91,7 +100,27 @@ const Register = () => {
                 value={contraseña}
                 onChange={cargarContraseña}
               ></input>
-
+            </div>
+            <div className="input">
+              <label>Repetir Contraseña: </label>
+              <input
+                type="password"
+                id="contraseña"
+                name="contraseña"
+                placeholder="Contraseña"
+                autoComplete="off"
+                value={contraseña}
+                onChange={cargarContraseña}
+              ></input>
+            </div>
+            <div>
+              <label for="chechbox" className="checkbox">
+                <input
+                  type="checkbox">
+                </input>
+                {/* <span> Acepto los <Link to={props.pathError}>terminos y condiciones</Link></span> */}
+              </label>
+            </div>
               <button onClick={guardarCLick}>Guardar</button>
             </main>
           </div>

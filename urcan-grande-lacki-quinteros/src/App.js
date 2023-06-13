@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Router>
-        <nav className="d-flex justify-content-between">
+        <nav className="d-flex justify-content-between  ">
           <div className="logo p-2 gap-3 d-flex align-items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"

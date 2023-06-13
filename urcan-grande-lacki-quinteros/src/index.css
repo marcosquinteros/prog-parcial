@@ -64,12 +64,28 @@ nav{
 
 .content {
   background-color: #ffffff;
-  padding: 20px;
+  padding: 60px;
   min-height: 70vh;
   display: grid;
   align-items: center;
   justify-content: center;
   gap: 2px;
+}
+
+.content-nombre{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+}
+
+.input input:hover{
+  color: black;
+  box-shadow: 0 0 4px gray;
 }
 
 .ad{
