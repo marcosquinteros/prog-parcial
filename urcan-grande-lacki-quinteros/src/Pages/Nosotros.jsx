@@ -10,6 +10,7 @@ const Nosotros = () => {
         <Integrantes />
         <hr />
         <Comentarios />
+        <hr />
       </main>
     </div>
   );
