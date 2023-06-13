@@ -110,22 +110,9 @@ nav{
 
 }
 
-.card-container {
-  padding: 1rem;
-  box-shadow: 7px 5px 25px -1px rgba(25,25,25,0.15);
-  border-radius: 14px;
-  width: 20rem;
-}
-.card-container img {
-  border-radius: 14px;
-}
-.card-container h2 {
-  padding-top: 1rem;  
-}
-.cards{
-  width: 100%;
-  display: flex;
-  gap: 1.7rem;
-  justify-content: center;
-  align-items: center;
+
+.card-img,
+.card {
+  max-width: 14rem;
+
 }

@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Col, Row, Card } from "react-bootstrap";
 const grupo = [
   {
     id: 0,
@@ -28,22 +28,22 @@ const grupo = [
 ];
 const Integrantes = () => {
   return (
-    <div>
-      <h1>¿Quienes somos?</h1>
-      <div className="cards d-flex">
-        {grupo.map((integrante) => (
-          <div className="card-container ">
-            <img
-              src={integrante.img}
-              alt={integrante.name}
-              width="280px"
-              height="280px"
-            />
-            <h2 className="text-center">{integrante.name}</h2>
-          </div>
-        ))}
-      </div>
-    </div>
+    <Row className="mt-5 mx-5 d-flex justify-content-center">
+      {grupo.map((integrante) => (
+        <Col md={6} lg={3} className="w-auto">
+          <Card>
+            <Card.Img src={integrante.img} />
+            <Card.Body>
+              <Card.Title>{integrante.name}</Card.Title>
+              {/* <Card.Footer>
+                <i className="bi bi-heart"></i>
+                <i className="bi bi-share"></i>
+              </Card.Footer> */}
+            </Card.Body>
+          </Card>
+        </Col>
+      ))}
+    </Row>
   );
 };
 
