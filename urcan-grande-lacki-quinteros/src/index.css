@@ -99,7 +99,8 @@ nav{
   display: flex;
   flex-direction: column;
   background-color: #252525;
-  padding-left: 80px;
+  padding-right: 80px;
+  margin-right: 100px;
   height: 100%;
   transition: 0.3s ease;
 }
@@ -114,11 +115,11 @@ nav{
 }
 
 .side-button{
-  padding: 3px;
+  padding-left: 160px;
   color: white;
   background-color: #252525;
   border: #252525;
-  position: fixed;
+  position: absolute;
 }
 
 .footer {

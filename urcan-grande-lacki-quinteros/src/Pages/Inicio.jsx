@@ -6,10 +6,10 @@ const Inicio = () => {
     <div>
       <div className="w-100">
         <div className="content-sidebar-wrapper">
-          <main className="content">
-            <Contenido />
-          </main>
             <Sidebar/>
+           <main className="content">
+            <Contenido/>
+          </main>
         </div>
       </div>
     </div>
