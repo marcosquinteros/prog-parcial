@@ -1,14 +1,11 @@
 import React from "react";
 import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Login from "../Pages/Login";
-import Register from "../Pages/Register";
-import Nosotros from "../Pages/Nosotros";
-import Error404 from "../Pages/Error404";
-import Inicio from "../Pages/Inicio";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const [sidebarOpen, setSidebarOpen]= useState(false);
+  const buttonLabel = sidebarOpen ? 'Cerrar' : 'Abrir';
+
   const handleClick = () =>{
     setSidebarOpen(!sidebarOpen)
   }
@@ -17,17 +14,17 @@ const Sidebar = () => {
   return(
     <div className="">
       <div className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
-            <button onClick={handleClick} className="side-button">Abrir</button>
-            <Link to="/" className="nav-button">
+            <button onClick={handleClick} className="side-button">{buttonLabel}</button>
+            <Link to="/" className="side-link">
               Inicio
             </Link>
-            <Link to="/Nosotros" className="nav-button">
+            <Link to="/Nosotros" className="side-link">
               Nosotros
             </Link>
-            <Link to="/Login" className="nav-button">
+            <Link to="/Login" className="side-link">
               Login
             </Link>
-            <Link to="/Register" className="nav-button">
+            <Link to="/Register" className="side-link">
               Register
             </Link>
       </div>

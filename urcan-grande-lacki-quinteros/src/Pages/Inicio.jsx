@@ -8,7 +8,7 @@ const Inicio = () => {
         <div className="content-sidebar-wrapper">
             <Sidebar/>
            <main className="content">
-            <Contenido/>
+            <Contenido/>  
           </main>
         </div>
       </div>
