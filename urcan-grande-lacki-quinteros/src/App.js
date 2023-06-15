@@ -6,6 +6,7 @@ import Nosotros from "./Pages/Nosotros";
 import Error404 from "./Pages/Error404";
 import Inicio from "./Pages/Inicio";
 import Footer from "./Components/Footer";
+import Loginp from "./Pages/Login";
 function App() {
   return (
     <>
@@ -30,7 +31,7 @@ function App() {
             </Link>
           </div>
           <div className="nav-buttons d-flex  align-items-center">
-            <Link to="/Login" className="nav-button">
+            <Link to="/Loginp" className="nav-button">
               Login
             </Link>
           </div>
@@ -38,7 +39,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Inicio />} />
-          <Route path="/Login" element={<Login />} />
+          <Route path="/Loginp" element={<Loginp />} />
           <Route path="/Register" element={<Register />} />
           <Route path="/Nosotros" element={<Nosotros />} />
           <Route path="/*" element={<Error404 />} />

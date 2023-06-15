@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-const Login = () => {
+const Login = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -13,19 +14,35 @@ const Login = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input
+      <div className="content-login-form">
+
+        <h3> Login </h3>
+        
+      <div className="email-div">
+      <p> E-mail </p>
+      <input className="email"
         type="email"
-        placeholder="Email"
+        placeholder=""
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
-      <input
+      </div>
+
+      <div className="pass-div">
+      <p> Contraseña </p>
+      <input className="pass"
         type="password"
-        placeholder="Password"
+        placeholder=""
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
-      <button type="submit">Login</button>
+      </div>
+
+      <button type="submit" className="botonlogin">Login</button>
+
+        <Link to={props.pathRegister}> ¿Queres registrarte? </Link>
+      
+    </div>
     </form>
   );
 };
