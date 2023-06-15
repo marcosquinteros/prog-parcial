@@ -16,8 +16,8 @@ const Sidebar = () => {
 
   return(
     <div className="">
-      <button onClick={handleClick} className="side-button">Abrir</button>
-      <div className={sidebarOpen ? 'sidebar' : 'sidebarOpen'}>
+      <div className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
+            <button onClick={handleClick} className="side-button">Abrir</button>
             <Link to="/" className="nav-button">
               Inicio
             </Link>
