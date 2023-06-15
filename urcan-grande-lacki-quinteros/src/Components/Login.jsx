@@ -13,19 +13,23 @@ const Login = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input
+      <div className="content-login">
+
+      <input className="email"
         type="email"
         placeholder="Email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
-      <input
+      <input className="pass"
         type="password"
         placeholder="Password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
-      <button type="submit">Login</button>
+      <button type="submit" className="botonlogin">Login</button>
+      
+      </div>
     </form>
   );
 };

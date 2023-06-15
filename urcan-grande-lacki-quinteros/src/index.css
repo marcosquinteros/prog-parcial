@@ -132,3 +132,9 @@ nav{
   max-width: 14rem;
 
 }
+
+.content-login{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
