@@ -6,8 +6,8 @@ const Loginp = () => {
     <div>
       <div className="w-100">
         <div className="content-sidebar-wrapper">
-          <main className="content"> 
-          <h2>Login</h2>
+          <main className="content-login"> 
+          <img src="https://cdn.openart.ai/uploads/image_JUna77g__1686848397360_512.webp" alt="image" className="imagen-login"/>
           <Login />
           </main>
         </div>
