@@ -1,7 +1,10 @@
 import { useState } from "react";
 
 const Comentarios = () => {
-  return <div>Hellos</div>;
+  return 
+  <div>
+    
+  </div>;
 };
 
 export default Comentarios;

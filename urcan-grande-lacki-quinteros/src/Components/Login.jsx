@@ -9,40 +9,41 @@ const Login = (props) => {
     e.preventDefault();
     console.log("Email:", email);
     console.log("Password:", password);
-    // Handle login logic here (e.g., sending data to the server)
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <div className="content-login-form">
-
         <h3> Login </h3>
-        
-      <div className="email-div">
-      <p> E-mail </p>
-      <input className="email"
-        type="email"
-        placeholder=""
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      </div>
 
-      <div className="pass-div">
-      <p> Contraseña </p>
-      <input className="pass"
-        type="password"
-        placeholder=""
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      </div>
+        <div className="email-div">
+          <p> E-mail </p>
+          <input
+            className="email"
+            type="email"
+            placeholder=""
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
 
-      <button type="submit" className="botonlogin">Login</button>
+        <div className="pass-div">
+          <p> Contraseña </p>
+          <input
+            className="pass"
+            type="password"
+            placeholder=""
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </div>
+
+        <button type="submit" className="botonlogin">
+          Login
+        </button>
 
         <Link to={props.pathRegister}> ¿Queres registrarte? </Link>
-      
-    </div>
+      </div>
     </form>
   );
 };

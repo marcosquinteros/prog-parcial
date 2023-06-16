@@ -176,4 +176,14 @@ nav{
 }
 
 
+/* Integrantes CSS */
+.contenedor-info{
+  /* border: 2px solid red; */
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  
+  /* justify-content: center; */
+  
 
+}

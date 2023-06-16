@@ -33,10 +33,31 @@ const grupo = [
 ];
 const Integrantes = () => {
   return (
-    <Row className="mt-5 mx-5 d-flex justify-content-center">
-      {grupo.map((integrante) => (
-        <Col md={6} lg={3} className="w-auto" key={integrante.id}>
-          <Card>
+    <Row className="mt-5 mx-5">
+      <Col lg={6} md={12} className="d-flex ">
+        <div className="contenedor-info p-5 border m-1">
+          <h1>Nuestra historia</h1>
+          <hr />
+          <p>
+            Somos un equipo apasionado de jóvenes programadores que ofrece una
+            plataforma en línea para la venta de arte generado por IA. Nuestro
+            objetivo es brindar una experiencia única y accesible a los amantes
+            del arte, ofreciendo obras originales y únicas creadas por
+            algoritmos inteligentes. Nos esforzamos por proporcionar una
+            experiencia de compra sin complicaciones y ser parte de la
+            emocionante travesía artística impulsada por la inteligencia
+            artificial.
+          </p>
+        </div>
+      </Col>
+      <Col
+        lg={6}
+        md={12}
+        className="d-flex justify-content-center gap-3 flex-wrap"
+      >
+        {grupo.map((integrante) => (
+          // <Col key={integrante.id}>
+          <Card className="mt-3 ">
             <Card.Img src={integrante.img} />
             <Card.Body>
               <Card.Title>
@@ -58,8 +79,9 @@ const Integrantes = () => {
               </Card.Title>
             </Card.Body>
           </Card>
-        </Col>
-      ))}
+          // {/* </Col> */}
+        ))}
+      </Col>
     </Row>
   );
 };
