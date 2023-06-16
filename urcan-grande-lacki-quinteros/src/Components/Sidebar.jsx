@@ -12,7 +12,7 @@ const Sidebar = () => {
 
 
   return(
-    <div className="">
+    <div className="sidebar-1">
       <div className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
             <button onClick={handleClick} className="side-button">{buttonLabel}</button>
             <Link to="/" className="side-link">
