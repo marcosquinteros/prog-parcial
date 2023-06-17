@@ -35,10 +35,10 @@ const Integrantes = () => {
   return (
     <Row className="mt-5 mx-5">
       <Col lg={6} md={12} className="d-flex ">
-        <div className="contenedor-info p-5 border m-1">
-          <h1>Nuestra historia</h1>
-          <hr />
-          <p>
+        <div className="contenedor-info p-5  m-1">
+          <h1 className="nosotros-text">Nuestra historia</h1>
+          <hr className="linea-separadora" />
+          <p className="desc-text">
             Somos un equipo apasionado de jóvenes programadores que ofrece una
             plataforma en línea para la venta de arte generado por IA. Nuestro
             objetivo es brindar una experiencia única y accesible a los amantes

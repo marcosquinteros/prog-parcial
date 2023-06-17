@@ -25,6 +25,7 @@ body {
 .container {  
   background-color: #18172b;
   display: flex;
+
   flex-direction: column;
   min-height: 70vh;
 }
@@ -195,7 +196,16 @@ nav{
 .card-img,
 .card {
   max-width: 14rem;
+}
 
+.nosotros-text{
+  color: #feee38;
+}
+.desc-text{
+  color:#ffffff;
+}
+.linea-separadora{
+  color: #feee38;
 }
 
 /* Login */

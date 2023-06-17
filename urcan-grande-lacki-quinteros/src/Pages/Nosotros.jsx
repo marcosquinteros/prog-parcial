@@ -5,8 +5,10 @@ import Comentarios from "../Components/Comentarios";
 const Nosotros = () => {
   return (
     <div className="w-100">
-      <main className="container-fluid">
-        <h1 className="text-center pt-5">¿Quienes somos?</h1>
+      <main className="container">
+        <h1 className="text-center pt-5 nosotros-text title">
+          ¿Quienes somos?
+        </h1>
         <Integrantes />
         <hr />
         <Comentarios />
