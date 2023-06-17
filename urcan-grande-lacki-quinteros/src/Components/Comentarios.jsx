@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Rating from "./Rating";
+import { Form, Button, ListGroup } from "react-bootstrap";
 
 const Comentarios = () => {
   const [name, setName] = useState("");
@@ -42,48 +43,52 @@ const Comentarios = () => {
   };
 
   return (
-    <div>
-      <h2>Formulario de Comentarios</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Nombre:</label>
-          <input
-            type="text"
-            id="name"
-            value={name}
-            onChange={handleNameChange}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="comment">Comentario:</label>
-          <textarea
-            id="comment"
-            value={comment}
-            onChange={handleCommentChange}
-            required
-          />
-        </div>
-        <div>
-          <label>Puntuación:</label>
-          <Rating defaultRating={rating} onRatingChange={handleRatingChange} />
-        </div>
-        <button type="submit">Enviar Comentario</button>
-      </form>
+    <>
+      <h2 className="nosotros-text">Danos tu opinion!</h2>
+      <div className=" w-100 d-flex align-items-center">
+        <Form onSubmit={handleSubmit}>
+          <Form.Group controlId="name" className="w-75">
+            <Form.Label className="desc-text">Nombre:</Form.Label>
+            <Form.Control
+              type="text"
+              value={name}
+              onChange={handleNameChange}
+              required
+            />
+          </Form.Group>
+          <Form.Group controlId="comment" className="w-75">
+            <Form.Label className="desc-text">Comentario:</Form.Label>
+            <Form.Control
+              as="textarea"
+              value={comment}
+              onChange={handleCommentChange}
+              required
+            />
+          </Form.Group>
+          <Form.Group controlId="rating">
+            <Rating
+              defaultRating={rating}
+              onRatingChange={handleRatingChange}
+            />
+          </Form.Group>
+          <Button type="submit">Enviar Comentario</Button>
+        </Form>
 
-      {comments.length > 0 ? (
-        <div className="border">
-          {comments.map((comment, index) => (
-            <div className="d-flex" key={index}>
-              <strong className="nosotros-text">{comment.name}</strong>
-              <p className="desc-text">{comment.comment}</p>
-            </div>
-          ))}
-        </div>
-      ) : (
-        <p>No hay comentarios aún.</p>
-      )}
-    </div>
+        {comments.length > 0 ? (
+          <ListGroup className="w-50">
+            {comments.map((comment, index) => (
+              <ListGroup.Item className="m-2" key={index}>
+                <strong>{comment.name}</strong>
+                {/* <Rating defaultRating={comment.rating} readOnly /> -{" "} */}
+                {comment.comment}
+              </ListGroup.Item>
+            ))}
+          </ListGroup>
+        ) : (
+          <p className="desc-text">No hay comentarios aún.</p>
+        )}
+      </div>
+    </>
   );
 };
 

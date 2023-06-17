@@ -27,7 +27,7 @@ body {
   display: flex;
 
   flex-direction: column;
-  min-height: 70vh;
+  /* min-height: 70vh; */
 }
 
 .container-top{
@@ -192,10 +192,16 @@ nav{
 }
 
 /* Nosotros */
-
+.form-nosotros-container{
+  
+}
 .card-img,
 .card {
   max-width: 14rem;
+}
+.card-body {
+  background-color: #feee38;
+
 }
 
 .nosotros-text{
