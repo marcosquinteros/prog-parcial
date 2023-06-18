@@ -291,4 +291,50 @@ nav{
   flex-direction: column;
   
   /* justify-content: center; */
+<<<<<<< HEAD
+=======
+  
+
+}
+
+/* Register */
+
+main.content-formulario {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  height: 400px;
+}
+
+div.content-sidebar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-register-div {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.imagen-register {
+  padding-left: 20px;
+  align-items: right;
+  width: 350px;
+  height: auto;
+}
+
+.content-register{
+  background-color: #ffffff;
+  padding: 60px;
+  min-height: 70vh;
+  display: flex;
+  justify-content: right;
+  
+>>>>>>> d964f18d5536b1efd0e4c80d2ff51a28442d2e6d
 }
