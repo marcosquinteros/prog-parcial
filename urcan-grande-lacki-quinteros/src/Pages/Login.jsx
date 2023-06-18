@@ -3,7 +3,7 @@ import Login from "../Components/Login";
 
 const Loginp = () => {
   return (
-    <div>
+    <div className="body-login">
       <div className="w-100">
         <div className="content-sidebar-wrapper">
           <main className="content-login">
