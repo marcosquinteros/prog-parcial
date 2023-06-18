@@ -1,19 +1,19 @@
 {
-  "posts": [
+  "loginData": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "email": "asdasd@asdasd.com",
+      "password": "adasd234235235",
+      "id": 1
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "email": "imthenasheman@hotmail.com",
+      "password": "asdasdasd",
+      "id": 2
+    },
+    {
+      "email": "cesargrande@gmail.com",
+      "password": "8e8aq62322412",
+      "id": 3
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

@@ -1,14 +1,26 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import axios from 'axios';
 
 const Login = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Email:", email);
-    console.log("Password:", password);
+  const handleSubmit = () => {
+    // Create an object representing the login data
+    const loginData = {
+      email,
+      password
+    };
+
+    // Make the POST request using axios
+    axios.post('http://localhost:3000/loginData', loginData)
+      .then(response => {
+        console.log('Login data saved:', response.data);
+      })
+      .catch(error => {
+        console.error('Error saving login data:', error);
+      });
   };
 
   return (
