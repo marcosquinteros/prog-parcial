@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Row, Card } from "react-bootstrap";
+import Comentarios from "./Comentarios";
 
 const grupo = [
   {
@@ -34,7 +35,7 @@ const grupo = [
 const Integrantes = () => {
   return (
     <Row className="mt-5 mx-5">
-      <Col lg={6} md={12} className="d-flex ">
+      <Col lg={6} md={12} className="d-flex flex-column">
         <div className="contenedor-info p-5  m-1">
           <h1 className="nosotros-text">Nuestra historia</h1>
           <hr className="linea-separadora" />
@@ -49,6 +50,7 @@ const Integrantes = () => {
             artificial.
           </p>
         </div>
+        <Comentarios />
       </Col>
       <Col
         lg={6}

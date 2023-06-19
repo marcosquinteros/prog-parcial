@@ -291,8 +291,7 @@ nav{
   flex-direction: column;
   
   /* justify-content: center; */
-<<<<<<< HEAD
-=======
+
   
 
 }
@@ -336,5 +335,4 @@ div.content-sidebar-wrapper {
   display: flex;
   justify-content: right;
   
->>>>>>> d964f18d5536b1efd0e4c80d2ff51a28442d2e6d
 }

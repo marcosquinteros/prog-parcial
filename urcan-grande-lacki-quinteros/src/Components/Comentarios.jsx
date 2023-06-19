@@ -43,7 +43,7 @@ const Comentarios = () => {
   };
 
   return (
-    <>
+    <div className="">
       <h2 className="nosotros-text">Danos tu opinion!</h2>
       <div className=" w-100 d-flex align-items-center">
         <Form onSubmit={handleSubmit}>
@@ -88,7 +88,7 @@ const Comentarios = () => {
           <p className="desc-text">No hay comentarios aún.</p>
         )}
       </div>
-    </>
+    </div>
   );
 };
 
