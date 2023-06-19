@@ -1,19 +1,68 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
+    "products": [
+      {
+        "id": 1,
+        "name": "Image Recognition",
+        "price": 49.99,
+        "description": "Advanced image recognition algorithm that can identify objects, people, and scenes in images with high accuracy.",
+        "imageUrl": "https://example.com/images/image-recognition.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Facial Emotion Analysis",
+        "price": 29.99,
+        "description": "Cutting-edge technology that analyzes facial expressions to detect emotions such as happiness, sadness, anger, and surprise.",
+        "imageUrl": "https://example.com/images/facial-emotion-analysis.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Object Detection",
+        "price": 39.99,
+        "description": "Powerful object detection model capable of identifying and locating multiple objects within an image.",
+        "imageUrl": "https://example.com/images/object-detection.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Text Recognition",
+        "price": 24.99,
+        "description": "Optical character recognition (OCR) system that can extract text from images and convert it into editable text.",
+        "imageUrl": "https://example.com/images/text-recognition.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Style Transfer",
+        "price": 34.99,
+        "description": "Apply artistic styles to images using deep learning techniques, transforming photos into stunning artworks.",
+        "imageUrl": "https://example.com/images/style-transfer.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Image Segmentation",
+        "price": 44.99,
+        "description": "Segment images into different regions based on their content, enabling advanced image analysis and editing.",
+        "imageUrl": "https://example.com/images/image-segmentation.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Image Super Resolution",
+        "price": 54.99,
+        "description": "Enhance the resolution and quality of low-resolution images, producing sharper and more detailed results.",
+        "imageUrl": "https://example.com/images/image-super-resolution.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Image Captioning",
+        "price": 19.99,
+        "description": "Generate descriptive captions for images using natural language processing and computer vision techniques.",
+        "imageUrl": "https://example.com/images/image-captioning.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Image Style Transfer",
+        "price": 49.99,
+        "description": "Apply the style of one image to another, creating unique and artistic compositions.",
+        "imageUrl": "https://example.com/images/image-style-transfer.jpg"
+      }
+    ]
   }
-}
+  

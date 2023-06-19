@@ -55,11 +55,11 @@ const Integrantes = () => {
       <Col
         lg={6}
         md={12}
-        className="d-flex justify-content-center gap-3 flex-wrap"
+        className="d-flex justify-content-center  gap-3 flex-wrap align-content-start"
       >
         {grupo.map((integrante) => (
-          // <Col key={integrante.id}>
-          <Card className="mt-3 ">
+          // <Col key={integrantne.id}>
+          <Card className="mt-3 card-integrantes" key={integrante.id}>
             <Card.Img src={integrante.img} />
             <Card.Body>
               <Card.Title>

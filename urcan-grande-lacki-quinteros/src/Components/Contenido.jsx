@@ -1,15 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Contenido = () => {
   return (
-    <div className="container">
+    <div className="container g-0 ">
       <div className="container-top">
         <div className="container-title">
           <h1>Titulo</h1>
         </div>
-        <div className="carrousel">
-
-        </div>
+        <div className="carrousel"></div>
       </div>
       <div className="container-bottom">
         <div className="container-art"></div>
@@ -19,6 +18,9 @@ const Contenido = () => {
         <div className="container-art"></div>
         <div className="container-art"></div>
       </div>
+      <Link to="./Productos" className="btn btn-success  w-25 my-3">
+        Ver todos los productos
+      </Link>
     </div>
   );
 };

@@ -7,6 +7,7 @@ import Error404 from "./Pages/Error404";
 import Inicio from "./Pages/Inicio";
 import Footer from "./Layout/Footer";
 import Navbar from "./Layout/Navbar";
+import Products from "./Pages/Products";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
           <Route path="/Login" element={<Login />} />
           <Route path="/Register" element={<Register />} />
           <Route path="/Nosotros" element={<Nosotros />} />
+          <Route path="/Productos" element={<Products />} />
           <Route path="/*" element={<Error404 />} />
         </Routes>
         <Footer pathIndex="/Inicio" pathNosotros="/Nosotros" pathError="/*" />

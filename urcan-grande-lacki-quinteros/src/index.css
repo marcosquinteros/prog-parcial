@@ -7,7 +7,7 @@
 
 
 body {
-  width: 100vw;
+  width: 100%;
   height: 100%;
   margin: 0;
   font-family: 'Helvetica Neue', sans-serif;
@@ -216,7 +216,8 @@ nav{
 }
 
 /* Nosotros */
-.nosotros-container{
+.nosotros-container,
+.productos-container{
   background-color: #18172b;
 }
 .card-img,
@@ -227,8 +228,16 @@ nav{
   background-color: #feee38;
 
 }
+.name-comentarios{
+  color: #2f4fe0;
+}
+.card-integrantes{
+  height: 20rem !important;
 
-.nosotros-text{
+}
+
+.nosotros-text,
+.productos-text{
   color: #feee38;
 }
 .desc-text{
@@ -236,6 +245,11 @@ nav{
 }
 .linea-separadora{
   color: #feee38;
+}
+/* productos */
+.product-card {
+  background-color: #feee38;
+  border-radius: 4px;
 }
 
 /* Login */

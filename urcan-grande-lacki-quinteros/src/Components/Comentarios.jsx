@@ -15,6 +15,7 @@ const Comentarios = () => {
     }
   }, []);
 
+  useEffect(() => {}, []);
   const handleNameChange = (event) => {
     setName(event.target.value);
   };
@@ -27,8 +28,9 @@ const Comentarios = () => {
     setRating(selectedRating);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
+
     const newComment = {
       name: name,
       comment: comment,
@@ -43,11 +45,12 @@ const Comentarios = () => {
   };
 
   return (
-    <div className="">
+    <div className="p-5 w-100 d-flex flex-column">
       <h2 className="nosotros-text">Danos tu opinion!</h2>
-      <div className=" w-100 d-flex align-items-center">
-        <Form onSubmit={handleSubmit}>
-          <Form.Group controlId="name" className="w-75">
+      <hr />
+      <div className=" w-100 d-flex flex-column ">
+        <Form className="w-75 d-flex flex-column" onSubmit={handleSubmit}>
+          <Form.Group controlId="name" className="w-100">
             <Form.Label className="desc-text">Nombre:</Form.Label>
             <Form.Control
               type="text"
@@ -56,7 +59,7 @@ const Comentarios = () => {
               required
             />
           </Form.Group>
-          <Form.Group controlId="comment" className="w-75">
+          <Form.Group controlId="comment" className="w-100">
             <Form.Label className="desc-text">Comentario:</Form.Label>
             <Form.Control
               as="textarea"
@@ -73,20 +76,24 @@ const Comentarios = () => {
           </Form.Group>
           <Button type="submit">Enviar Comentario</Button>
         </Form>
-
-        {comments.length > 0 ? (
-          <ListGroup className="w-50">
-            {comments.map((comment, index) => (
-              <ListGroup.Item className="m-2" key={index}>
-                <strong>{comment.name}</strong>
-                {/* <Rating defaultRating={comment.rating} readOnly /> -{" "} */}
-                {comment.comment}
-              </ListGroup.Item>
-            ))}
-          </ListGroup>
-        ) : (
-          <p className="desc-text">No hay comentarios aún.</p>
-        )}
+        <hr />
+        <div className="d-flex flex-column w-100">
+          {comments.length > 0 ? (
+            <ListGroup className="">
+              {comments.map((comment, index) => (
+                <ListGroup.Item className="m-1 w-100" key={index}>
+                  <div className="d-flex flex-column name-comentarios">
+                    <strong>{comment.name}</strong>
+                    {/* <Rating defaultRating={comment.rating} readOnly /> -{" "} */}
+                  </div>
+                  <div className="px-2">{comment.comment}</div>
+                </ListGroup.Item>
+              ))}
+            </ListGroup>
+          ) : (
+            <p className="desc-text">No hay comentarios aún.</p>
+          )}
+        </div>
       </div>
     </div>
   );
