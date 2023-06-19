@@ -6,7 +6,6 @@ import Nosotros from "./Pages/Nosotros";
 import Error404 from "./Pages/Error404";
 import Inicio from "./Pages/Inicio";
 import Footer from "./Layout/Footer";
-import Loginp from "./Pages/Login";
 import Navbar from "./Layout/Navbar";
 function App() {
   return (
@@ -15,7 +14,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Inicio />} />
-          <Route path="/Loginp" element={<Loginp />} />
+          <Route path="/Login" element={<Login />} />
           <Route path="/Register" element={<Register />} />
           <Route path="/Nosotros" element={<Nosotros />} />
           <Route path="/*" element={<Error404 />} />

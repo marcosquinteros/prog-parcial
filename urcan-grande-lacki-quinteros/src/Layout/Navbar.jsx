@@ -22,7 +22,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="nav-buttons d-flex  align-items-center">
-        <Link to="/Loginp" className="nav-button">
+        <Link to="/Login" className="nav-button">
           Login
         </Link>
       </div>

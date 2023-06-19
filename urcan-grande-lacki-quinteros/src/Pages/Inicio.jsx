@@ -5,7 +5,7 @@ const Inicio = () => {
   return (
     <div>
       <div className="w-100">
-        <div className="">
+        <div className="inicio">
           <Sidebar />
           <main className="content">
             <Contenido />

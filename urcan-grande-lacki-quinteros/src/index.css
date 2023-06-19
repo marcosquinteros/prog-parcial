@@ -16,6 +16,11 @@ body {
   background-color:#18172b ; 
 }
 
+.inicio{
+  display: flex;
+  flex-direction: row;
+  background-color: #18172b;
+}
 /* Contenido */
 
 .content {
@@ -25,7 +30,6 @@ body {
 .container {  
   background-color: #18172b;
   display: flex;
-
   flex-direction: column;
   /* min-height: 70vh; */
 }
@@ -67,9 +71,9 @@ body {
 }
 
 .container-art{
-  width: 50vh;
-  height: 50vh;
-  margin: 2rem 0 2rem 0;
+  width: 49vh;
+  height: 49vh;
+  margin: 2rem 0.5rem 2rem 0.5rem;
   border-radius: 7px;
   border: solid #feee38 3px;
 }
@@ -155,18 +159,22 @@ nav{
 }
 
 .side-button{
-  color: #feee38;
-  background-color: #14256f;
-  border: 0px;
-  border-bottom: 3px solid #feee38;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
   top: 0.2rem;
   position: absolute;
-  right: 0.3rem;
+  right: 0.7rem;
 }
 
 .side-button:hover{
   color: #fe9999;
-  border-bottom: 3px solid #fe9999;
   transition: 0.4s ease-in-out;
 }
 
@@ -182,6 +190,22 @@ nav{
 .side-link:hover{
   color: #fe9999;
   border-bottom: 3px solid #fe9999;
+  transition: 0.4s ease-out;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  margin: 3px;
+  border-radius: 5apx;
+}
+
+.side-button .line{
+  background-color: #feee38;
+}
+
+.side-button:hover .line{
+  background-color: #fe9999;
   transition: 0.4s ease-out;
 }
 

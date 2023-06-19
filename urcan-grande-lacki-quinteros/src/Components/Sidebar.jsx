@@ -14,7 +14,11 @@ const Sidebar = () => {
   return(
     <div className="sidebar-1">
       <div className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
-            <button onClick={handleClick} className="side-button">{buttonLabel}</button>
+            <button onClick={handleClick} className="side-button">
+            <div className="line"></div>
+            <div className="line"></div>
+            <div className="line"></div>
+            </button>
             <Link to="/" className="side-link">
               Inicio
             </Link>
