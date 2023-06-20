@@ -18,7 +18,7 @@ const Contenido = () => {
         <div className="container-art"></div>
         <div className="container-art"></div>
       </div>
-      <Link to="./Productos" className="btn btn-success  w-25 my-3">
+      <Link to="./Productos" className="button-verproductos w-50">
         Ver todos los productos
       </Link>
     </div>

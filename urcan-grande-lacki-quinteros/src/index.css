@@ -251,6 +251,24 @@ nav{
   background-color: #feee38;
   border-radius: 4px;
 }
+.product-info  {
+
+}
+.button-comprar,
+.button-verproductos{
+  text-decoration: none;
+  border: 2px solid #feee38;
+  border-radius: 8px;
+  background-color: #18172b  ; 
+  color: #feee38 ;
+  padding: 7px 12px;
+  transition: all 100ms ease-in;
+}
+.button-comprar:hover,
+.button-verproductos:hover {
+  background-color: #1e012b;
+  color: #fe9999;
+}
 
 /* Login */
 

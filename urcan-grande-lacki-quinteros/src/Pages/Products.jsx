@@ -3,7 +3,7 @@ import ProductsList from "../Components/ProductsList";
 const Products = ({ products }) => {
   return (
     <div className="productos-container">
-      <ProductsList />
+      <ProductsList pathError="/*" />
     </div>
   );
 };
