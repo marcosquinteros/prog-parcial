@@ -3,7 +3,7 @@ import Register from "../Components/Register";
 
 const register = () => {
   return (
-    <div>
+    <div className="body-register">
       <div className="w-100">
         <div className="content-sidebar-wrapper">
           <main className="content-register">

@@ -42,73 +42,79 @@ const guardarCLick = () => {
 };
 
 return (
-    <div className="content-register-div">
-        <h3>REGISTER</h3>
+    <div className="content-login-form">
+        <h3>REGISTRARSE</h3>
+
         <div>
-            <main className="content-formulario">
+            <form className="content-formulario">
             <div>
-                <div className="input">
-                <label>Nombre: </label>
+                <div className="nombre-div">
+                <p>Nombre: </p>
                 <input
                 type="text"
                 id="nombre"
-                name="nombre"
+                className="nombre"
                 placeholder="Nombre"
                 autoComplete="off"
                 value={nombre}
                 onChange={cargarNombre}
                 ></input>
                 </div>
-                <div className="input">
-                <label>Apellido: </label>
+                
+                <div className="apellido-div">
+                <p>Apellido: </p>
                 <input
                 type="text"
                 id="apellido"
-                name="apellido"
+                className="apellido"
                 placeholder="Apellido"
                 autoComplete="off"
                 value={apellido}
                 onChange={cargarApellido}
                 ></input>
-            </div>  
             </div>
-            <div className="input">
-                <label>E-mail: </label>
+            
+            </div>
+            <div className="email-div">
+            <p>E-mail: </p>
             <input
                 type="text"
                 id="email"
-                name="email"
+                className="email"
                 placeholder="E-mail"
                 autoComplete="off"
                 value={email}
                 onChange={cargarEmail}
             ></input>
             </div>
-            <div className="input">
-            <label>Contraseña: </label>
+            
+            <div className="pass-div">
+            <p>Contraseña: </p>
             <input
                 type="password"
                 id="contraseña"
-                name="contraseña"
+                className="pass"
                 placeholder="Contraseña"
                 autoComplete="off"
                 value={contraseña}
                 onChange={cargarContraseña}
             ></input>
             </div>
-            <div className="input">
-            <label>Repetir Contraseña: </label>
+            
+            <div className="passRepeat-div">
+            <p>Repetir Contraseña: </p>
             <input
                 type="password"
                 id="contraseña"
-                name="contraseña"
+                className="contraseña"
                 placeholder="Contraseña"
                 autoComplete="off"
                 value={contraseña}
                 onChange={cargarContraseña}
             ></input>
             </div>
-            <div>
+            
+            <div className="terminos">
             <label for="chechbox" className="checkbox">
                 <input
                 type="checkbox">
@@ -116,11 +122,12 @@ return (
                 <span> Acepto los <Link to={props.pathError}>terminos y condiciones</Link></span>
             </label>
             </div>
-            <button onClick={guardarCLick}>Guardar</button>
-            </main>
+            <button onClick={guardarCLick} className="botonguardar">Guardar</button>
+            </form>
         </div>
     </div>
 );
 };
 
 export default Register;
+

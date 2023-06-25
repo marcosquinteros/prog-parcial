@@ -1,40 +1,20 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import { Col, Row, Card } from "react-bootstrap";
+import Comentarios from "./Comentarios";
+import axios from "axios";
 
-const grupo = [
-  {
-    id: 0,
-    name: "Paul Urcan",
-    age: 21,
-    img: "https://live.staticflickr.com/65535/52927864826_5ac1500a6c_o.jpg",
-    github: "https://github.com/PaulUrcan",
-  },
-  {
-    id: 1,
-    name: "Matias Grande",
-    age: 20,
-    img: "https://live.staticflickr.com/65535/52927864911_af121a8c82_o.jpg",
-    github: "https://github.com/BigMatias",
-  },
-  {
-    id: 2,
-    name: "Santiago Lacki",
-    age: 25,
-    img: "https://live.staticflickr.com/65535/52928312203_b14916f494_o.jpg",
-    github: "https://github.com/SantiagoLacki",
-  },
-  {
-    id: 3,
-    name: "Marcos Quinteros",
-    age: 19,
-    img: "https://live.staticflickr.com/65535/52927279787_929b65e330_o.jpg",
-    github: "https://github.com/mwarcos",
-  },
-];
 const Integrantes = () => {
+  const [integrante, setIntegrante] = useState([]);
+  const URL = "http://localhost:8000/integrantes";
+  useEffect(() => {
+    axios.get(URL).then((res) => {
+      setIntegrante(res.data);
+    });
+  }, []);
+
   return (
     <Row className="mt-5 mx-5">
-      <Col lg={6} md={12} className="d-flex ">
+      <Col lg={6} md={12} className="d-flex flex-column">
         <div className="contenedor-info p-5  m-1">
           <h1 className="nosotros-text">Nuestra historia</h1>
           <hr className="linea-separadora" />
@@ -49,15 +29,16 @@ const Integrantes = () => {
             artificial.
           </p>
         </div>
+        <Comentarios />
       </Col>
       <Col
         lg={6}
         md={12}
-        className="d-flex justify-content-center gap-3 flex-wrap"
+        className="d-flex justify-content-center  gap-3 flex-wrap align-content-start"
       >
-        {grupo.map((integrante) => (
-          // <Col key={integrante.id}>
-          <Card className="mt-3 ">
+        {integrante.map((integrante) => (
+          // <Col key={integrantne.id}>
+          <Card className="mt-3 card-integrantes" key={integrante.id}>
             <Card.Img src={integrante.img} />
             <Card.Body>
               <Card.Title>

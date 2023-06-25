@@ -5,10 +5,10 @@ const Inicio = () => {
   return (
     <div>
       <div className="w-100">
-        <div className="content-sidebar-wrapper">
-            <Sidebar/>
-           <main className="content">
-            <Contenido/>  
+        <div className="inicio">
+          <Sidebar />
+          <main className="content">
+            <Contenido />
           </main>
         </div>
       </div>
