@@ -293,6 +293,7 @@ nav{
 
 .imagen-login{
   padding-left: 120px;
+  border-radius: 10px;
 }
 
 .botonlogin, .botonguardar {
@@ -380,8 +381,9 @@ div.content-sidebar-wrapper {
 .imagen-register {
   padding-left: 20px;
   align-items: right;
-  width: 300px;
+  width: 320px;
   height: auto;
+  border-radius: 10px;
 }
 
 .content-register{

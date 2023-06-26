@@ -14,7 +14,7 @@ const Login = (props) => {
     };
 
     // Make the POST request using axios
-    axios.post('http://localhost:3000/loginData', loginData)
+    axios.post('http://localhost:3001/loginData', loginData)
       .then(response => {
         console.log('Login data saved:', response.data);
       })

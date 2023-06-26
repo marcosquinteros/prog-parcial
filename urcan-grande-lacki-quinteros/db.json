@@ -14,104 +14,157 @@
       "email": "cesargrande@gmail.com",
       "password": "8e8aq62322412",
       "id": 3
+    },
+    {
+      "email": "asdfgh@asdfghj.com",
+      "password": "mnbvcxz",
+      "id": 4
     }
   ],
-  
-  "products" : [
-      {
-        "id": 1,
-        "name": "Lumina Shoes",
-        "price": 49.99,
-        "description": "A pair of shimmering and elegant shoes for any occasion.",
-        "url": "https://cdn.discordapp.com/attachments/1081998137780076605/1081998138023354378/Slohginfizz_unicorn_reading_a_book_in_a_sunny_green_grassy_mead_a9582703-b005-46e4-90a3-e277faa35c8b.png"
-      },
-      {
-        "id": 2,
-        "name": "Ethereal Shirt",
-        "price": 29.99,
-        "description": "A lightweight and comfortable shirt with a unique feather pattern.",
-        "url": "https://cdn.discordapp.com/attachments/1081998137780076605/1082000230846845080/MidjiMan_a_book_in_a_sunny_green_grassy_meadow_about_death_7e7dce0f-429c-4029-9253-a718684c8c1d.png"
-      },
-      {
-        "id": 3,
-        "name": "Whimsical Hat",
-        "price": 19.99,
-        "description": "A magical hat that will make you stand out in any crowd.",
-        "url": "https://cdn.discordapp.com/attachments/1055936224650600538/1055936224814174238/candor_Eyvind_Earle_landscape_Sailor_Moon_urban_scenery_soft_at_cecffac3-385a-4cab-a443-1a40e70dd1ee.png"
-      },
-      {
-        "id": 4,
-        "name": "Crystal Dream Dress",
-        "price": 79.99,
-        "description": "An elegant dress adorned with sparkling crystals.",
-        "url": "https://cdn.discordapp.com/attachments/1081063931684069376/1081066133853065216/notahotshot_youthful_yellow_yak_extreme_snowboarding_in_Switzer_53008af5-249f-43be-a990-aedaf88e3edd.png"
-      },
-      {
-        "id": 5,
-        "name": "Enchanting Handbag",
-        "price": 39.99,
-        "description": "A dreamy handbag with ample space for all your essentials.",
-        "url": "https://cdn.discordapp.com/attachments/1120688199853940828/1120688200395010200/Star4uk_None_a4bec73b-419c-47f7-8391-226058734761.png"
-      },
-      {
-        "id": 6,
-        "name": "Moonlit Earrings",
-        "price": 14.99,
-        "description": "A pair of earrings in the shape of a full moon, perfect for astronomy lovers.",
-        "url": "https://cdn.discordapp.com/attachments/1109863045242552360/1114645904364937397/MARGO___None_2_15881c2f-3f5e-4bc0-bcb9-c79076954184.png"
-      },
-      {
-        "id": 7,
-        "name": "Butterfly Ring",
-        "price": 9.99,
-        "description": "A delicate ring with a butterfly design that glows in the dark.",
-        "url": "https://cdn.discordapp.com/attachments/1062440175814320158/1063163030751432714/Jesse_S_rocket_ship_space_background_88193fb6-9cc4-4434-b202-ad8bfcc5a09b.png"
-      },
-      {
-        "id": 8,
-        "name": "Golden Belt",
-        "price": 34.99,
-        "description": "A high-quality gold belt that adds a touch of luxury to any outfit.",
-        "url": "https://cdn.discordapp.com/attachments/1114547073044463758/1114547073249980576/Noir_Patrick_star_dressed_in_vintage_exotic_dancer_attire._Allu_5e9a190c-5506-496b-85ca-78c2ed52b4f5.png"
-      },
-      {
-        "id": 9,
-        "name": "Enchanted Bracelet",
-        "price": 24.99,
-        "description": "A mystical bracelet with enchanting symbols that attract good luck.",
-        "url": "https://cdn.discordapp.com/attachments/1108138832102170776/1111556338921787442/asyouknoww_A_Google_Maps_streets_view_photo_of_robot_running_fr_663c494f-b063-4df1-ab81-70cc394d6118.png"
-      }
-    ],
-
-    "integrantes" : [
-      {
-        "id": 0,
-        "name": "Paul Urcan",
-        "age": 21,
-        "img": "https://live.staticflickr.com/65535/52927864826_5ac1500a6c_o.jpg",
-        "github": "https://github.com/PaulUrcan"
-      },
-      {
-        "id": 1,
-        "name": "Matias Grande",
-        "age": 20,
-        "img": "https://live.staticflickr.com/65535/52927864911_af121a8c82_o.jpg",
-        "github": "https://github.com/BigMatias"
-      },
-      {
-        "id": 2,
-        "name": "Santiago Lacki",
-        "age": 25,
-        "img": "https://live.staticflickr.com/65535/52928312203_b14916f494_o.jpg",
-        "github": "https://github.com/SantiagoLacki"
-      },
-      {
-        "id": 3,
-        "name": "Marcos Quinteros",
-        "age": 19,
-        "img": "https://live.staticflickr.com/65535/52927279787_929b65e330_o.jpg",
-        "github": "https://github.com/mwarcos"
-      }
-    ]
-  }
-  
+  "registerData": [
+    {
+      "id": 1,
+      "nombre": "Augusto",
+      "apellido": "Fernandez",
+      "email": "agusaf@yahoo.com",
+      "password": "0o9i8u7y"
+    },
+    {
+      "nombre": "qwertyuiop",
+      "apellido": "asdfghjkl",
+      "email": "zxcvbnm@yahoo.com",
+      "password": "plokijuh",
+      "id": 2
+    },
+    {
+      "nombre": "Marcos",
+      "apellido": "Quintana",
+      "email": "marquitokpo@yahoo.com",
+      "password": "23456789",
+      "id": 3
+    },
+    {
+      "nombre": "Mike",
+      "apellido": "BIg",
+      "email": "bigmike2000@hotmail.com",
+      "password": "12345678",
+      "id": 4
+    },
+    {
+      "nombre": "mmnbvcxz",
+      "apellido": "qwerty",
+      "email": "okmijn@gmail.com",
+      "password": "1q2w3e4r5t6y",
+      "id": 5
+    },
+    {
+      "nombre": "lkjhgfds",
+      "lastName": "nbvcxz",
+      "email": "iuytre@vbjthrfv.com",
+      "password": "polurcan1233",
+      "id": 6
+    },
+    {
+      "nombre": "alberto",
+      "apellido": "gonzales",
+      "email": "albertitotito@gmail.com",
+      "password": "zxcvbnm",
+      "id": 7
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Lumina Shoes",
+      "price": 49.99,
+      "description": "A pair of shimmering and elegant shoes for any occasion.",
+      "url": "https://cdn.discordapp.com/attachments/1081998137780076605/1081998138023354378/Slohginfizz_unicorn_reading_a_book_in_a_sunny_green_grassy_mead_a9582703-b005-46e4-90a3-e277faa35c8b.png"
+    },
+    {
+      "id": 2,
+      "name": "Ethereal Shirt",
+      "price": 29.99,
+      "description": "A lightweight and comfortable shirt with a unique feather pattern.",
+      "url": "https://cdn.discordapp.com/attachments/1081998137780076605/1082000230846845080/MidjiMan_a_book_in_a_sunny_green_grassy_meadow_about_death_7e7dce0f-429c-4029-9253-a718684c8c1d.png"
+    },
+    {
+      "id": 3,
+      "name": "Whimsical Hat",
+      "price": 19.99,
+      "description": "A magical hat that will make you stand out in any crowd.",
+      "url": "https://cdn.discordapp.com/attachments/1055936224650600538/1055936224814174238/candor_Eyvind_Earle_landscape_Sailor_Moon_urban_scenery_soft_at_cecffac3-385a-4cab-a443-1a40e70dd1ee.png"
+    },
+    {
+      "id": 4,
+      "name": "Crystal Dream Dress",
+      "price": 79.99,
+      "description": "An elegant dress adorned with sparkling crystals.",
+      "url": "https://cdn.discordapp.com/attachments/1081063931684069376/1081066133853065216/notahotshot_youthful_yellow_yak_extreme_snowboarding_in_Switzer_53008af5-249f-43be-a990-aedaf88e3edd.png"
+    },
+    {
+      "id": 5,
+      "name": "Enchanting Handbag",
+      "price": 39.99,
+      "description": "A dreamy handbag with ample space for all your essentials.",
+      "url": "https://cdn.discordapp.com/attachments/1120688199853940828/1120688200395010200/Star4uk_None_a4bec73b-419c-47f7-8391-226058734761.png"
+    },
+    {
+      "id": 6,
+      "name": "Moonlit Earrings",
+      "price": 14.99,
+      "description": "A pair of earrings in the shape of a full moon, perfect for astronomy lovers.",
+      "url": "https://cdn.discordapp.com/attachments/1109863045242552360/1114645904364937397/MARGO___None_2_15881c2f-3f5e-4bc0-bcb9-c79076954184.png"
+    },
+    {
+      "id": 7,
+      "name": "Butterfly Ring",
+      "price": 9.99,
+      "description": "A delicate ring with a butterfly design that glows in the dark.",
+      "url": "https://cdn.discordapp.com/attachments/1062440175814320158/1063163030751432714/Jesse_S_rocket_ship_space_background_88193fb6-9cc4-4434-b202-ad8bfcc5a09b.png"
+    },
+    {
+      "id": 8,
+      "name": "Golden Belt",
+      "price": 34.99,
+      "description": "A high-quality gold belt that adds a touch of luxury to any outfit.",
+      "url": "https://cdn.discordapp.com/attachments/1114547073044463758/1114547073249980576/Noir_Patrick_star_dressed_in_vintage_exotic_dancer_attire._Allu_5e9a190c-5506-496b-85ca-78c2ed52b4f5.png"
+    },
+    {
+      "id": 9,
+      "name": "Enchanted Bracelet",
+      "price": 24.99,
+      "description": "A mystical bracelet with enchanting symbols that attract good luck.",
+      "url": "https://cdn.discordapp.com/attachments/1108138832102170776/1111556338921787442/asyouknoww_A_Google_Maps_streets_view_photo_of_robot_running_fr_663c494f-b063-4df1-ab81-70cc394d6118.png"
+    }
+  ],
+  "integrantes": [
+    {
+      "id": 0,
+      "name": "Paul Urcan",
+      "age": 21,
+      "img": "https://live.staticflickr.com/65535/52927864826_5ac1500a6c_o.jpg",
+      "github": "https://github.com/PaulUrcan"
+    },
+    {
+      "id": 1,
+      "name": "Matias Grande",
+      "age": 20,
+      "img": "https://live.staticflickr.com/65535/52927864911_af121a8c82_o.jpg",
+      "github": "https://github.com/BigMatias"
+    },
+    {
+      "id": 2,
+      "name": "Santiago Lacki",
+      "age": 25,
+      "img": "https://live.staticflickr.com/65535/52928312203_b14916f494_o.jpg",
+      "github": "https://github.com/SantiagoLacki"
+    },
+    {
+      "id": 3,
+      "name": "Marcos Quinteros",
+      "age": 19,
+      "img": "https://live.staticflickr.com/65535/52927279787_929b65e330_o.jpg",
+      "github": "https://github.com/mwarcos"
+    }
+  ]
+}
