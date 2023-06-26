@@ -5,7 +5,7 @@ import axios from "axios";
 
 const Integrantes = () => {
   const [integrante, setIntegrante] = useState([]);
-  const URL = "http://localhost:8000/integrantes";
+  const URL = "http://localhost:3001/integrantes";
   useEffect(() => {
     axios.get(URL).then((res) => {
       setIntegrante(res.data);

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const ProductsList = (props) => {
   const [products, setProducts] = useState([]);
-  const URL = "http://localhost:8000/products";
+  const URL = "http://localhost:3001/products";
 
   useEffect(() => {
     axios.get(URL).then((res) => {
