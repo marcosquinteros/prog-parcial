@@ -15,6 +15,62 @@
       "email": "cesargrande@gmail.com",
       "password": "8e8aq62322412",
       "id": 3
+    },
+    {
+      "email": "asdfgh@asdfghj.com",
+      "password": "mnbvcxz",
+      "id": 4
+    }
+  ],
+  "registerData": [
+    {
+      "id": 1,
+      "nombre": "Augusto",
+      "apellido": "Fernandez",
+      "email": "agusaf@yahoo.com",
+      "password": "0o9i8u7y"
+    },
+    {
+      "nombre": "qwertyuiop",
+      "apellido": "asdfghjkl",
+      "email": "zxcvbnm@yahoo.com",
+      "password": "plokijuh",
+      "id": 2
+    },
+    {
+      "nombre": "Marcos",
+      "apellido": "Quintana",
+      "email": "marquitokpo@yahoo.com",
+      "password": "23456789",
+      "id": 3
+    },
+    {
+      "nombre": "Mike",
+      "apellido": "BIg",
+      "email": "bigmike2000@hotmail.com",
+      "password": "12345678",
+      "id": 4
+    },
+    {
+      "nombre": "mmnbvcxz",
+      "apellido": "qwerty",
+      "email": "okmijn@gmail.com",
+      "password": "1q2w3e4r5t6y",
+      "id": 5
+    },
+    {
+      "nombre": "lkjhgfds",
+      "lastName": "nbvcxz",
+      "email": "iuytre@vbjthrfv.com",
+      "password": "polurcan1233",
+      "id": 6
+    },
+    {
+      "nombre": "alberto",
+      "apellido": "gonzales",
+      "email": "albertitotito@gmail.com",
+      "password": "zxcvbnm",
+      "id": 7
     }
   ],
   
