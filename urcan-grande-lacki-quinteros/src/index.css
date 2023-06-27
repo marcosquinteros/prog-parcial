@@ -37,18 +37,13 @@ body {
 .container-top{
   display: flex;
   flex-direction: column;
-  margin: 2rem;
-  max-width: 180vh;
-  min-height: 35vh;
-  margin-right: 25vh;
+  
+
+   max-width: 180vh;
+  min-height: 35vh; 
+  margin-right: 10rem;
 }
 
-.container-title{
-  width: 15rem;
-  height: 4rem;
-  border-radius: 7px;
-  border: solid #feee38 3px;
-}
 
 .carrousel{
   width: 100%;
@@ -64,10 +59,10 @@ body {
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  margin: 2rem;
-  max-width: 180vh;
-  min-height: 35vh;
-  margin-right: 25vh;
+  /* margin: 2rem; */
+  /* max-width: 180vh; */
+  /* min-height: 35vh; */
+  /* margin-right: 25vh; */
 }
 
 .container-art{
@@ -238,7 +233,8 @@ nav{
 }
 
 .nosotros-text,
-.productos-text{
+.productos-text,
+.offers-tittle{
   color: #feee38;
 }
 .desc-text{

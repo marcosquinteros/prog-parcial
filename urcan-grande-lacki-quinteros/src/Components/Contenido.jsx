@@ -1,26 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Carrousel from "./Carrousel";
+import Ofertas from "./Ofertas";
 
 const Contenido = () => {
   return (
-    <div className="container g-0 ">
+    <div className="mb-5 g-0">
       <div className="container-top">
-        <div className="container-title">
-          <h1>Titulo</h1>
-        </div>
-        <div className="carrousel"></div>
+        <Carrousel />
       </div>
-      <div className="container-bottom">
-        <div className="container-art"></div>
-        <div className="container-art"></div>
-        <div className="container-art"></div>
-        <div className="container-art"></div>
-        <div className="container-art"></div>
-        <div className="container-art"></div>
+      <h2 className="offers-tittle">Ofertas</h2>
+      <div className="">
+        <Ofertas pathError="/*" />
       </div>
-      <Link to="./Productos" className="button-verproductos w-50">
-        Ver todos los productos
-      </Link>
+      <div className="ver-products w-100 d-flex justify-content-center mt-5">
+        <Link to="./Productos" className="button-verproductos ">
+          Ver todos los productos
+        </Link>
+      </div>
     </div>
   );
 };

@@ -1,3 +1,4 @@
+
 {
   "loginData": [
     {
@@ -82,6 +83,54 @@
         "url": "https://cdn.discordapp.com/attachments/1108138832102170776/1111556338921787442/asyouknoww_A_Google_Maps_streets_view_photo_of_robot_running_fr_663c494f-b063-4df1-ab81-70cc394d6118.png"
       }
     ],
+
+    
+      "products-ofertas": [
+        {
+          "id": 1,
+          "name": "Astral Timepiece",
+          "price": 99.99,
+          
+          "url": "https://media.discordapp.net/attachments/1021734300728688750/1021887459560263700/jubial_Donald_trump_wearing_hello_kitty_costume_8k_fcc2bfe4-8649-42fe-aca2-a394a05f4aa8.png?width=662&height=662"
+        },
+        {
+          "id": 2,
+          "name": "Polaris Sunglasses",
+          "price": 49.99,
+         
+          "url": "https://media.discordapp.net/attachments/951197655021797436/1123011246413860884/0_2.png?width=662&height=662"
+        },
+        {
+          "id": 3,
+          "name": "Arctic Boots",
+          "price": 79.99,
+     
+          "url": "https://media.discordapp.net/attachments/951197655021797436/1123018106525208576/iamastopsign_A_dog_relaxing_and_smoking_a_cigar_while_looking_i_47240ea5-4f11-424f-87f4-ccb525036268.png?width=662&height=662"
+        },
+        {
+          "id": 4,
+          "name": "Raven Leather Jacket",
+          "price": 149.99,
+       
+          "url": "https://media.discordapp.net/attachments/1118241244091519037/1120158086578061352/MikeOnline_a_portrait_of_a_mountain_goat_sitting_in_a_dimly_lit_cc3b7bff-7a7e-4f42-851c-10e696d0f642.png?width=662&height=662"
+        },
+        {
+          "id": 5,
+          "name": "Sturdy Trek Backpack",
+          "price": 39.99,
+    
+          "url": "https://media.discordapp.net/attachments/991481596182020177/1123010064484147291/orlandogrech_Close_up_of_a_gorgeous_statue_of_liberty_wearing_a_e633f780-7431-421d-b1a3-607be3333f78.png?width=662&height=662"
+        },
+        {
+          "id": 6,
+          "name": "Wireless Echo Earbuds",
+          "price": 69.99,
+    
+          "url": "https://media.discordapp.net/attachments/1121822076085473330/1121858374263390270/lightningmccoy_Record_for_the_onlooker_youre_forcing_me_to_go_t_ad6fafe4-0ec0-4089-b842-2e913ad416a0.png?width=662&height=662"
+        }
+      ],
+    
+    
 
     "integrantes" : [
       {
