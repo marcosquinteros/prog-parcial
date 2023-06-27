@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Rating from "./Rating";
 import { Form, Button, ListGroup } from "react-bootstrap";
+import axios from "axios";
 
 const Comentarios = () => {
   const [name, setName] = useState("");

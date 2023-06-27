@@ -1,26 +1,50 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import axios from 'axios';
+import axios from "axios";
+import Swal from "sweetalert2";
 
 const Login = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = () => {
-    // Create an object representing the login data
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
     const loginData = {
       email,
-      password
+      password,
     };
 
-    // Make the POST request using axios
-    axios.post('http://localhost:3001/loginData', loginData)
-      .then(response => {
-        console.log('Login data saved:', response.data);
+    axios
+      .get("http://localhost:3001/registerData", {
+        params: {
+          email: loginData.email,
+          password: loginData.password,
+        },
       })
-      .catch(error => {
-        console.error('Error saving login data:', error);
+      .then((response) => {
+        const usuarios = response.data;
+
+        if (usuarios.length > 0) {
+          // Usuario encontrado
+          mostrarAlerta("success", "Inicio de sesión exitoso");
+        } else {
+          // Usuario no encontrado
+          mostrarAlerta("error", "Credenciales inválidas");
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+        mostrarAlerta("error", "Error en el inicio de sesión");
       });
+  };
+
+  const mostrarAlerta = (icon, message) => {
+    Swal.fire({
+      icon: icon,
+      text: message,
+      confirmButtonText: "Aceptar",
+    });
   };
 
   return (
